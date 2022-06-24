@@ -14,16 +14,35 @@ public class Calculator {
       switch(op) {
          case '+': ans = num1 + num2;
             break;
-         case '-': ans = num1 - num2;
+         case '-':
+         if(num1>num2)
+         {
+            ans = num1 - num2;
+         } 
+         else{
+            ans = num2 - num1;
+         }
             break;
          case '*': ans = num1 * num2;
             break;
-         case '/': ans = num1 / num2;
+         case '/':
+         if(num1>num2)
+         {
+            ans = num1 / num2;
+         } 
+         else{
+            ans = num2 / num1;
+         }
             break;
       default: System.out.println("Error! Enter correct operator");
          return;
       }
       System.out.println("The result is given as follows:");
+      if(num1>num2){
       System.out.println(num1 + " " + op + " " + num2 + " = " + ans);
+      }
+      else{
+         System.out.println(num2 + " " + op + " " + num1 + " = " + ans);
+      }
    }
 }
