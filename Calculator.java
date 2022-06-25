@@ -37,7 +37,7 @@ public class Calculator {
       default: System.out.println("Error! Enter correct operator");
          return;
       }
-      System.out.println("The result is given as follows:");
+      System.out.println("The result of the input is as given below :");
       if(num1>num2){
       System.out.println(num1 + " " + op + " " + num2 + " = " + ans);
       }
