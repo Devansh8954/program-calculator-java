@@ -9,7 +9,7 @@ public class Calculator {
       System.out.println("Enter two numbers: ");
       num1 = sc.nextDouble();
       num2 = sc.nextDouble();
-      System.out.println("Enter an operator (+, -, *, /): ");
+      System.out.println("Enter an operator (+, -, *, /, %): ");
       op = sc.next().charAt(0);
       switch(op) {
          case '+': ans = num1 + num2;
@@ -34,6 +34,10 @@ public class Calculator {
             ans = num2 / num1;
          }
             break;
+            case '%':
+            ans = num1 % num2;
+            break;
+
       default: System.out.println("Error! Enter correct operator");
          return;
       }
