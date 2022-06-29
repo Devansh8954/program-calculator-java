@@ -18,4 +18,10 @@ public class table
         }
      }
     }
+
+    public void asign() {
+    }
+
+    public void Condition() {
+    }
 }

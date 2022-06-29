@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.*;
 public class Calculator 
 {
    double num1;
@@ -7,16 +6,16 @@ public class Calculator
    double ans;
    char op;
    
-   void asign()
+   public void asign()
    {
-      Scanner sc = new Scanner(System.in);
-      System.out.println("Enter two numbers: ");
-      num1 = sc.nextDouble();
-      num2 = sc.nextDouble();
-      System.out.println("Enter an operator (+, -, *, /, %): ");
-      op = sc.next().charAt(0);
+         Scanner sc = new Scanner(System.in);
+         System.out.println("Enter two numbers: ");
+         num1 = sc.nextDouble();
+         num2 = sc.nextDouble();
+         System.out.println("Enter an operator (+, -, *, /, %): ");
+         op = sc.next().charAt(0);
    }
-    void Condition()
+   public void Condition()
    {
       switch(op) {
          case '+': ans = num1 + num2;
@@ -54,6 +53,7 @@ public class Calculator
       table obj = new table();
       System.out.println("The result of the input is as given below :");
       obj.asign();
+      obj.Condition();
 
       if(num1>num2){
       System.out.println(num1 + " " + op + " " + num2 + " = " + ans);
