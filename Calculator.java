@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.*;
 public class Calculator 
 {
    double num1;
@@ -6,13 +7,17 @@ public class Calculator
    double ans;
    char op;
    
-   public void main(String[] args) {
+   void asign()
+   {
       Scanner sc = new Scanner(System.in);
       System.out.println("Enter two numbers: ");
       num1 = sc.nextDouble();
       num2 = sc.nextDouble();
       System.out.println("Enter an operator (+, -, *, /, %): ");
       op = sc.next().charAt(0);
+   }
+    void Condition()
+   {
       switch(op) {
          case '+': ans = num1 + num2;
             break;
@@ -43,7 +48,13 @@ public class Calculator
       default: System.out.println("Error! Enter correct operator");
          return;
       }
+   }
+   public void main(String[] args)
+   {
+      table obj = new table();
       System.out.println("The result of the input is as given below :");
+      obj.asign();
+
       if(num1>num2){
       System.out.println(num1 + " " + op + " " + num2 + " = " + ans);
       }
