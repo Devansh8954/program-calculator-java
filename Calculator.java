@@ -9,6 +9,7 @@ public class Calculator
    public void asign()
    {
          Scanner sc = new Scanner(System.in);
+         sc.close ();
          System.out.println("Enter two numbers: ");
          num1 = sc.nextDouble();
          num2 = sc.nextDouble();
