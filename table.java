@@ -2,10 +2,10 @@ import java.util.Scanner;
 public class table
 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner s = new Scanner(System.in);
         //It is the number to calculate
         System.out.println("Enter a number to find Table");
-        int num = sc.nextInt();
+        int num = s.nextInt();
         if(num<=0)
         {
             System.out.println("Error! Please Enter Correct number");
@@ -14,14 +14,9 @@ public class table
         for(int i=1; i<=10; i++)
         {
             int tab = num*i;
-            System.out.println(num+"*"+i+"="+tab);
+            System.out.println(num+" * "+i+" = "+tab);
         }
+        s.close();
      }
-    }
-
-    public void asign() {
-    }
-
-    public void Condition() {
     }
 }

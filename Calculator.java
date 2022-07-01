@@ -9,14 +9,14 @@ public class Calculator
    public void asign()
    {
          Scanner sc = new Scanner(System.in);
-         sc.close ();
          System.out.println("Enter two numbers: ");
          num1 = sc.nextDouble();
          num2 = sc.nextDouble();
          System.out.println("Enter an operator (+, -, *, /, %): ");
          op = sc.next().charAt(0);
+         sc.close();
    }
-   public void Condition()
+   public void cond()
    {
       switch(op) {
          case '+': ans = num1 + num2;
@@ -48,19 +48,21 @@ public class Calculator
       default: System.out.println("Error! Enter correct operator");
          return;
       }
+
+         System.out.println("The result of the input is as given below :");
+       if(num1>num2){
+         System.out.println(num1 + " " + op + " " + num2 + " = " + ans);
+         }
+         else{
+            System.out.println(num2 + " " + op + " " + num1 + " = " + ans);
+         }
    }
-   public void main(String[] args)
+      
+   public static void main(String[] args)
    {
       table obj = new table();
-      System.out.println("The result of the input is as given below :");
       obj.asign();
-      obj.Condition();
+      obj.cond();
 
-      if(num1>num2){
-      System.out.println(num1 + " " + op + " " + num2 + " = " + ans);
-      }
-      else{
-         System.out.println(num2 + " " + op + " " + num1 + " = " + ans);
-      }
    }
-}
+}   
