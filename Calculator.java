@@ -60,7 +60,7 @@ public class Calculator
       
    public static void main(String[] args)
    {
-      table obj = new table();
+      Calculator obj = new Calculator();
       obj.asign();
       obj.cond();
 
