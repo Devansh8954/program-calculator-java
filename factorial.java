@@ -6,7 +6,8 @@ class factorial{
      Scanner sc = new Scanner(System.in);
      int i,fact=1;  
      System.out.println("Enter a number in which you have to find Factorial");
-     int num=sc.nextInt();//It is the number to calculate factorial    
+     int num=sc.nextInt();//It is the number to calculate factorial   
+     sc.close(); 
      if((num==0)||(num<0))
      {
         System.out.println("Factorial is 1");    
@@ -18,5 +19,6 @@ class factorial{
      }
      System.out.println("Factorial of "+num+" is: "+fact);
     }
+    
     }  
    }  
